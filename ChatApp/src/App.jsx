@@ -37,12 +37,12 @@ function App() {
           </h1>
         </div>
 
-        <div className="space-y-4 bg-slate-50 px-6 py-6">
-          {messages.map((message) => (
+        <div className="h-[60vh] overflow-y-auto space-y-4 bg-slate-50 px-6 py-6">
+          {messages.map((message, index) => (
             <div
-              key={{ message }}
+              key={index}
               className={
-                "max-w-xs rounded-2xl bg-white px-4 py-3 text-sm text-slate-700 shadow-sm"
+                "max-w-[80%] w-fit rounded-2xl bg-white px-4 py-3 text-sm text-slate-700 shadow-sm"
               }
             >
               {message}
